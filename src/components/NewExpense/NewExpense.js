@@ -10,6 +10,7 @@ const NewExpense = (props) => {
       id: Math.random().toString(),
     };
     props.onAddExpense(expenseData);
+    setNewExpense(false);
   };
 
   const addNewExpenseHandler = () => {
